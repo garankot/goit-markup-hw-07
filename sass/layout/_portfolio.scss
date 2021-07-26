@@ -6,12 +6,12 @@
   
   .filters-list-item {
     display: block;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
   }
   
-  .filters-list-item:not(:last-child) {
-    margin-right: 8px;
-  }
-
   .projects-list {
     display: flex;
     flex-wrap: wrap;
@@ -23,11 +23,14 @@
     margin-left: 30px;
     margin-top: 30px;
     background: var(--main-title-color);
-  }
-  .projects-list-item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+      0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
   }
+  
   .projects-suptitle {
     font-size: 18px;
     line-height: 2;
@@ -71,7 +74,7 @@
     transition: transform 250ms linear;
   }
   
-  .projects-link:hover .overlay,
-  .projects-link:focus .overlay {
+  .projects-link:hover &,
+  .projects-link:focus & {
     transform: translateY(0%);
   }

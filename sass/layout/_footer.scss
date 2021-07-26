@@ -46,14 +46,14 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms var(--transition-timing-function);
+
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+    }
   }
   
-  .address-list__link-mail:hover,
-  .address-list__link-tel:hover,
-  .address-list__link-mail:focus,
-  .address-list__link-tel:focus {
-    color: var(--accent-color);
-  }
+  
   
   .footer-social-title {
     margin-bottom: 20px;
@@ -75,14 +75,14 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--main-title-color);
     transition: background-color 250ms var(--transition-timing-function);
-  }
-  
-  .social-list__footer-link:hover,
-  .social-list__footer-link:focus {
+
+    &:hover,
+    &:focus {
     color: var(--main-title-color);
     background-color: var(--accent-color);
+   }
   }
-  
+    
   .footer-social-icon {
     fill: currentColor;
     width: 22px;
@@ -122,13 +122,13 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     padding: 15px 16px;
+   
     & :focus {
       outline: none;
       border-color: var(--accent-color);
       transition: border-color 250ms var(--transition-timing-function);
     }
   }
-
 
   .subscribe-btn {
     display: flex;
@@ -147,13 +147,13 @@
     line-height: 1.8;
     letter-spacing: 0.06em;
     cursor: pointer;
+   
     & :hover{
       background-color: var(--btn-hover-color);
       transition: background-color 250ms var(--transition-timing-function);
     }
   }
-  
-  
+    
   .subscribe-btn__icon {
     width: 24px;
     height: 24px;

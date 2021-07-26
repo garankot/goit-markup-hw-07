@@ -28,9 +28,11 @@
     border-radius: 4px;
     box-sizing: border-box;
     transition: color 250ms var(--transition-timing-function);
-  }
-  .clients-link:hover,
-  .clients-link:focus {
+
+    &:hover,
+    &:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
   }
+  }
+  

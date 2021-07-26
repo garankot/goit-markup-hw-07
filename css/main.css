@@ -140,8 +140,7 @@ body {
   transition: background-color 250ms var(--transition-timing-function);
 }
 
-.popup-btn:hover,
-.popup-btn:focus {
+.popup-btn:hover, .popup-btn:focus {
   background: var(--btn-hover-color);
 }
 
@@ -182,16 +181,15 @@ body {
   transition: background-color 250ms var(--transition-timing-function);
 }
 
+.social-link:hover, .social-link:focus {
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+}
+
 .social-icon {
   fill: currentColor;
   width: 20px;
   height: 20px;
-}
-
-.social-link:hover,
-.social-link:focus {
-  color: var(--main-title-color);
-  background-color: var(--accent-color);
 }
 
 .filters-btn {
@@ -209,8 +207,7 @@ body {
   transition: color 250ms var(--transition-timing-function);
 }
 
-.filters-btn:hover,
-.filters-btn:focus {
+.filters-btn:hover, .filters-btn:focus {
   background: var(--accent-color);
   color: var(--main-title-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -252,11 +249,6 @@ body {
   margin-top: 4px;
 }
 
-.modal-form-input:focus + .input-icon {
-  fill: var(--accent-color);
-  transition: fill 250ms var(--transition-timing-function);
-}
-
 .modal-form-input {
   width: 100%;
   height: 40px;
@@ -278,6 +270,11 @@ body {
   left: 12px;
   width: 18px;
   height: 18px;
+}
+
+.modal-form-input:focus + .input-icon {
+  fill: var(--accent-color);
+  transition: fill 250ms var(--transition-timing-function);
 }
 
 .modal-form-message {
@@ -349,19 +346,8 @@ body {
   transition: background-color 250ms var(--transition-timing-function);
 }
 
-.modal-form-btn:hover,
-.modal-form-btn:focus {
+.modal-form-btn:hover, .modal-form-btn:focus {
   background: var(--btn-hover-color);
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .modal {
@@ -390,8 +376,7 @@ body {
   padding: 0;
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.close-btn:hover, .close-btn:focus {
   fill: var(--accent-color);
   transition: fill 250ms var(--transition-timing-function);
 }
@@ -399,6 +384,16 @@ body {
 .close-btn-icon {
   width: 11px;
   height: 11px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms linear, visibility 250ms linear;
 }
 
 .is-hidden {
@@ -446,8 +441,7 @@ body {
   transition: color 250ms var(--transition-timing-function);
 }
 
-.menu__link:hover,
-.menu__link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -457,15 +451,15 @@ body {
   margin-left: auto;
 }
 
+.contact-menu .contact-menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-menu__contact-icon {
   fill: currentColor;
   margin-right: 10px;
   width: 16px;
   height: 16px;
-}
-
-.contact-menu .contact-menu__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .contact-menu__mail-link,
@@ -482,8 +476,7 @@ body {
   transition: color 250ms var(--transition-timing-function);
 }
 
-.contact-menu__mail-link:hover,
-.contact-menu__mail-link:focus,
+.contact-menu__mail-link:hover, .contact-menu__mail-link:focus,
 .contact-menu__tel-link:hover,
 .contact-menu__tel-link:focus {
   color: var(--accent-color);
@@ -645,8 +638,7 @@ body {
   transition: color 250ms var(--transition-timing-function);
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients-link:hover, .clients-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -701,9 +693,8 @@ body {
   transition: color 250ms var(--transition-timing-function);
 }
 
-.address-list__link-mail:hover,
+.address-list__link-mail:hover, .address-list__link-mail:focus,
 .address-list__link-tel:hover,
-.address-list__link-mail:focus,
 .address-list__link-tel:focus {
   color: var(--accent-color);
 }
@@ -731,8 +722,7 @@ body {
   transition: background-color 250ms var(--transition-timing-function);
 }
 
-.social-list__footer-link:hover,
-.social-list__footer-link:focus {
+.social-list__footer-link:hover, .social-list__footer-link:focus {
   color: var(--main-title-color);
   background-color: var(--accent-color);
 }
