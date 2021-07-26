@@ -738,13 +738,10 @@ body {
 }
 
 .subscribe-mail {
-  display: inline-block;
-  align-items: center;
   margin-left: auto;
 }
 
 .subscribe-mail-title {
-  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
